@@ -1,0 +1,343 @@
+@charset "UTF-8";
+
+html * {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box; 
+}
+
+body {
+    margin: 0;
+    background-color: white;
+    color: #333;
+    font-family: "游ゴシック",YuGothic,"Noto Sans Japanese",sans-serif;
+    font-weight: 500;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: none;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(36, 150, 216);
+    transition: 0.3s;
+}
+
+main {
+    margin: 0;
+}
+
+table {
+    margin: 0;
+    padding: 0;
+}
+
+a:hover {
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+.error {
+    color: red;
+}
+
+input[type="text"] {
+    background-color: transparent !important;
+    outline: none;
+    border: 1px solid black
+}
+
+input[type="password"] {
+    background-color: transparent !important;
+    outline: none;
+    border: 1px solid black
+}
+
+input[type="submit"] {
+    border: 1px solid black;
+    background-color: transparent !important;
+    transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+    color: white;
+    background-color: rgb(36, 150, 216) !important;
+    transition: 0.3s;
+}
+
+textarea {
+    border: 1px solid black;
+    background-color: transparent !important;
+}
+
+/*===================================
+    header
+=======================================*/
+header h1 {
+    display: inline-block;
+}
+
+header i {
+    font-size: 30px;
+}
+
+/*===============================
+    top.php
+===================================*/
+.wrap.top {
+    margin: 0 20px 0 20px;
+    text-align: center;
+}
+
+.wrap.top .text.top {
+    display: inline-block;
+    text-align: left;
+}
+
+.wrap.top .text.top span.description {
+    display: block;
+    border: 1px solid rgb(36, 150, 216);
+    padding: 10px
+}
+
+.wrap.top .text.top span.description {
+    margin:2em 0;
+    position: relative;
+    padding: 0.25em 1em;
+    border: 1px solid rgb(36, 150, 216);
+    border-radius: 3px 0 3px 0;
+}
+.wrap.top .text.top span.description:before,.wrap.top .text.top span.description:after {
+    content: '';
+    position: absolute;
+    width:10px;
+    height: 10px;
+    border: 1px solid rgb(36, 150, 216);
+    border-radius: 50%;
+}
+
+.wrap.top .text.top span.description:after {
+    top:-10px;
+    left:-10px;
+}
+
+.wrap.top .text.top span.description:before {
+    bottom:-10px;
+    right:-10px;
+}
+
+.wrap.top .reference {
+    text-align: left;
+    margin-top: 100px;
+    display: inline-block;
+}
+
+.wrap.top q {
+    display: block;
+}
+
+/*====================================
+    register.php
+==========================================*/
+.wrap.register {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.wrap.register .required {
+    border: 1px solid red;
+    color: red;
+    padding: 1px;
+    font-size: 14px;
+}
+
+/*==================================
+    login.php
+=====================================*/
+.wrap.login {
+    margin: 0 auto;
+    text-align: center;
+}
+
+/*==================================
+    index.php
+=====================================*/
+.wrap.index input[type="text"] {
+    width: 40px;
+}
+
+.wrap.index {
+    margin: 0 5px 0 5px;
+    text-align: center;
+}
+
+.wrap.index ul li.form-parts {
+    margin-bottom: 10px;
+}
+
+.wrap.index main {
+    margin: 20px 0;
+}
+
+.wrap.index main .sub-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+
+}
+
+.table-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.table-container .table {
+    width: 33.33%;
+}
+
+.wrap.index table {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.wrap.index table td {
+    border-bottom: 1px solid black;
+}
+
+.wrap.index table td:last-child {
+    border-bottom: 1px solid red;
+}
+
+.wrap.index .table:nth-child(1) table tr td:first-child {
+    width: 80px;
+}
+
+.run-record-container {
+    text-align: left;
+    margin: 0;
+}
+
+.run-record-container .sub-title {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.run-record-container .run-record {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.run-record-container .run-record .run-record-part {
+    width: 24%;
+    margin-bottom: 15px;
+    border: 1px solid black;
+    padding: 3px;
+}
+
+.run-record-container .run-record .run-record-part:not(:nth-child(4n)) {
+    margin-right: 1.333333%;
+}
+
+.run-record-container .run-record .run-record-part a.run-record-anchor {
+    border: 1px solid rgb(36, 150, 216);
+    font-size: 14px;
+    padding: 1px;
+}
+
+.run-record-container .run-record .run-record-part .run-record-date {
+    text-align: center;
+    margin: 0 auto;
+    font-weight: bold;
+}
+
+.run-record-container .run-record .run-record-part .run-record-anchor-container {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.no-record {
+    text-align: center;
+    margin: 50px auto 50px;
+    font-weight: bold;
+}
+
+/*========================
+    modify.php
+=============================*/
+.wrap.modify {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.wrap.modify input[type="text"] {
+    width: 40px;
+}
+
+.wrap.modify ul li.form-parts {
+    margin-bottom: 10px;
+}
+
+/*==========================
+resposive design
+================================*/
+@media (max-width: 800px) {
+    .table-container .table {
+        width: 50%;
+    }
+
+    .run-record-container .run-record .run-record-part {
+        width: 32%;
+    }
+
+    .run-record-container .run-record .run-record-part:not(:nth-child(3n)) {
+        margin-right: 1.3333%;
+    }
+
+    .run-record-container .run-record .run-record-part:not(:nth-child(4n)) {
+        margin-right: 0%;
+    }
+}
+
+@media (max-width: 600px) {
+    .table-container .table {
+        width: 100%;
+    }
+
+    .table-container .table:first-child {
+        margin: 0 60px;
+    }
+
+    .run-record-container .run-record .run-record-part {
+        width: 49%;
+    }
+
+    .run-record-container .run-record .run-record-part:nth-child(odd) {
+        margin-right: 1%;
+    }
+
+    .run-record-container .run-record .run-record-part:nth-child(even) {
+        margin-right: 0%;
+    }
+}
